@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    height: 800px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.container:hover .controls {
+    opacity: 1;
+}
+
+.carousel {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    transition: 1s ease-in-out all;
+}
+
+.slide {
+    min-width: 100%;
+    min-height: 800px;
+    height: auto;
+}
+
+.controls {
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease 0.5s;
+}
+
+.control {
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: .5;
+    transition: ease .3s;
+    cursor: pointer;
+}
+
+.control:hover {
+    opacity: 1;
+}
+
+.btns {
+    margin-top: 40px;
+}
+
+.btns button {
+    font-size: 18px;
+    margin: 0 10px
+}
